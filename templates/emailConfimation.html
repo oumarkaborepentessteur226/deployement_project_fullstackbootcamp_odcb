@@ -1,0 +1,9 @@
+{% autoescape off %}
+
+Bienvenu sur ODCB authentification
+
+Salut {{ name }}
+
+SVP cliquez sur le lien ci-dessous pour activer votre compte
+confirm link :https//{{domain}}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}

@@ -1,0 +1,120 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+  <head>
+  	<title>Contact Form 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{% static 'css/stylesignin.css' %}">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">INSCRIPTION</h2>
+				</div>
+			</div>
+					<div class="row justify-content-center">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row justify-content-center">
+
+							<div class="col-lg-8">
+								<div class="contact-wrap">
+
+
+									<form action="/signup" method="post"  name="contactForm" class="contactForm">
+										{% csrf_token %}
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" id="username" name="username" class="form-control"  placeholder="nom d'utilisateur" required>
+												</div>
+											</div>
+                                            <div class="col-md-12">
+												<div class="form-group">
+													<input type="text" id="firstname" name="firstname" class="form-control"  placeholder="Prenom" required>
+												</div>
+											</div>
+                                            <div class="col-md-12">
+												<div class="form-group">
+													<input type="text" id="lastname" name="lastname" class="form-control"  placeholder="Nom" required>
+												</div>
+											</div>
+                                            <div class="col-md-12">
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="password" id="password" name="password" class="form-control"  placeholder="mots de passe" required>
+												</div>
+											</div>
+                                            	<div class="col-md-12">
+												<div class="form-group">
+													<input type="password" id="comfirmpwd" name="comfirmpwd" class="form-control"  placeholder="confirme mots de passe" required>
+												</div>
+											</div>
+
+
+											<div class="col-md-12">
+
+												<div class="form-group">
+													<input type="submit" value="s'inscrire" class="btn " style="background-color:rgb(255, 115, 0); color:white;font-size:18px;">
+												</div>
+											</div>
+										</div>
+									</form>
+										</div>
+											</div>
+										</div>
+							</div>
+											</div>
+										</div>
+		</div>
+
+	</section>
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+<!--
+
+{% block content %}
+
+
+<h2>Register Here</h2><br>
+
+<form action="/signup" method="post">
+    {% csrf_token %}
+    <input type="text" id="username" name="username" placeholder="Create your username here" required>
+    <br><br>
+    <input type="text" id="firstname" name="firstname" placeholder="Create your firstname here" required>
+    <br><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Creater your lastname here" required>
+    <br><br>
+    <input type="email" id="email" name="email" placeholder="Create your email here" required>
+    <br><br>
+    <input type="password" id="password" name="password" placeholder="Create your password here" required>
+    <br><br>
+    <input type="password" id="comfirmpwd" name="comfirmpwd" placeholder="Enter your password again" required>
+    <br><br>
+   <button type="submit">Sign Up</button> 
+   
+    
+</form>
+{% endblock %}-->

@@ -1,0 +1,41 @@
+<!doctype html>
+{% load static %}
+
+<html lang="en">
+  <head>
+  	<title>Contact Form 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="{% static 'css/stylesignin.css' %}">
+
+	</head>
+	<body>
+
+
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+
+
+<!--<form action="/signin" method="post">
+    {% csrf_token %}
+    <label for="username">Nom</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username " required>
+    <br><br>
+    <label for="password">Mots passe</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password here" required>
+    <br><br>
+
+   <button type="submit">Sign In</button>
+
+</form>-->
